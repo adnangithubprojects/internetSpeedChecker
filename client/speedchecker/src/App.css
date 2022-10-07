@@ -1,0 +1,64 @@
+/* svg circle {
+  stroke-dasharray: 420;
+  stroke-dashoffset: 420;
+  @apply w-40 h-40 stroke-[10] fill-transparent stroke-rose-600 translate-x-2 translate-y-2;
+}
+svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  @apply stroke-sky-50;
+}
+svg circle:nth-child(2) {
+  stroke-dashoffset: 50;
+  @apply stroke-sky-50;
+}
+
+span {
+  transform: rotate(calc(18deg * var(--i);
+  @apply absolute top-0 left-0 w-4 h-4;
+}
+span::before {
+  content: "";.co
+  box-shadow: 0 0 10px green, 0 0 20px green, 0 0 40px green, 0 0 60px green,
+    0 0 80px green, 0 0 100px green;
+  @apply absolute top-0 left-0 w-4 h-4 bg-green-700 rounded-full;
+} */
+
+/* .container {
+  @apply flex  justify-center items-center w-screen  rounded-full h-screen;
+}
+.loading {
+  -webkit-animation: scale 1s infinite ease-in-out;
+  animation: scale 1s infinite ease-in-out;
+  @apply bg-blue-300 rounded-full h-24 w-24;
+}
+
+@keyframes scale {
+  0% {
+    -webkit-animation: scale(0);
+    transform: scale(0);
+  }
+  100% {
+    -webkit-animation: scale(1);
+    opacity: 0.5;
+    transform: scale(1);
+  }
+} */
+.container {
+  @apply flex  justify-center items-center w-screen h-screen;
+}
+.loading {
+  @apply relative  rounded-[50%]  h-24 w-24 animate-spin;
+}
+.loading::before {
+  content: "";
+  @apply absolute top-0 left-0  bg-gradient-to-t from-sky-50 to-[#2c479a]  rounded-l-full  shadow-transparent    w-[50%] h-full;
+}
+.loading::after {
+  content: "";
+  box-shadow: 0 0 10px #2c479a, 0 0 20px #2c479a, 0 0 30px #2c479a,
+    0 0 50px #2c479a, 0 0 70px #2c479a;
+  @apply absolute top-0 left-[50%]  bg-[#2c479a] rounded-[50%] w-3 h-3;
+}
+.loading span {
+  @apply absolute top-2 left-2 bottom-2 right-2 bg-white rounded-[50%];
+}

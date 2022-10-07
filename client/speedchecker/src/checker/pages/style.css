@@ -1,0 +1,19 @@
+.container {
+  @apply flex  justify-center items-center w-20 h-20;
+}
+.loading {
+  @apply relative  rounded-[50%]  h-10 w-10;
+}
+.loading::before {
+  content: "";
+  @apply absolute top-0 left-0  bg-gradient-to-t from-sky-50 to-[#2c479a]  rounded-l-full  shadow-transparent    w-[50%] h-full;
+}
+.loading::after {
+  content: "";
+  box-shadow: 0 0 10px #2c479a, 0 0 20px #2c479a, 0 0 30px #2c479a,
+    0 0 50px #2c479a, 0 0 70px #2c479a;
+  @apply absolute top-0 left-[50%]  bg-[#2c479a] rounded-[50%] w-2 h-2;
+}
+.loading span {
+  @apply absolute top-1 left-1 bottom-1 right-1 rounded-[50%];
+}
